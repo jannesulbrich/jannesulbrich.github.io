@@ -29,7 +29,7 @@
 
 /* Allgemein */
 p {
-  /* font-family: Favorit; */
+  font-family: Favorit;
   font-family: GeneralSans-Variable;
   font-variation-settings: 'wght' 540.0;
 }
@@ -41,6 +41,7 @@ a {
 
   color: transparent;
   text-shadow: 0 0 4px rgba(115,129,255,1);
+  /* text-shadow: 0 0 4px rgba(0,0,0,1); */
 
   /* color: transparent;
   text-shadow: 0 0 5px rgba(115,129,255,0.5); */
@@ -55,6 +56,7 @@ a {
 a:hover {
   /* color: #ffff00; */
   color: #7381FF;
+  /* color: #000; */
   text-shadow: none;
 }
 p::selection {
@@ -175,7 +177,7 @@ img.logo {
 
 
 /* Beschreibung Homepage */
-div.info-home {
+div.home-content {
   position: fixed;
   top: 20%;
 }
@@ -189,6 +191,83 @@ p.description {
   /* margin-left: 100px; */
   cursor: url('../img/cursor.png'), auto;
 }
+a.about {
+  text-shadow: 0 0 calc(1px + (2.5 - 1) * ((100vw - 420px) / (1920 - 420))) rgba(115,129,255,1);
+}
+a.about:hover {
+  text-shadow: none;
+}
+/* Beschreibung */
+
+/* PROJEKTLISTE */
+div.projects {
+  /* background-color: yellow; */
+  width: 100vw;
+  padding-left: 10vw;
+  margin-top: 18vh;
+  font-size: calc(15px + (35 - 15) * ((100vw - 420px) / (1920 - 420)));
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+div.projects a {
+  text-shadow: 0 0 calc(1px + (3.5 - 1) * ((100vw - 420px) / (1920 - 420))) rgba(115,129,255,1);
+  white-space: pre;
+}
+div.projects a:hover {
+  text-shadow: none;
+}
+div.projects span.title {
+  display: inline-block;
+  width: 40vw;
+  cursor: url('../img/cursor_pointer.png'), auto;
+}
+div.projects span.class {
+  display: inline-block;
+  width: 20vw;
+  cursor: url('../img/cursor_pointer.png'), auto;
+}
+/* PROJEKTLISTE */
+
+/* PROJEKT-PREVIEW */
+/* div.home-preview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  z-index: -2;
+} */
+div.pre {
+  position: absolute;
+  z-index: 2;
+}
+div.pre img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+}
+div.pre-snw {
+  display: none;
+  width: 30vw;
+  top: 30vh;
+  right: 15vw;
+}
+div.pre-zh {
+  display: none;
+  width: 25vw;
+  top: 27.5vh;
+  left: 15vw;
+}
+div.pre-hs {
+  display: none;
+  width: 33vw;
+  top: 16vh;
+  left: 35vw;
+}
+/* PROJEKT-PREVIEW */
+
 /* Navigation */
 p.nav {
   margin-top: 45px;
@@ -200,6 +279,7 @@ p.nav {
 a.nav {
   margin-right: 8px;
 }
+/* Navigation */
 
 /* PROJEKTE-HOME */
 /* allgemein */
